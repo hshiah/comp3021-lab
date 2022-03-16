@@ -2,8 +2,8 @@ package base;
 
 import java.util.Date;
 import java.util.Objects;
-
-public class Note implements Comparable<Note>{
+import java.io.*;
+public class Note implements Comparable<Note>,Serializable{
 	private Date date;
 	private String title;
 	
