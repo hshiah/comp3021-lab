@@ -24,7 +24,7 @@ public class TextNote extends Note implements Serializable{
 		try {
 			file=new File(absolutePath);
 			is=new FileInputStream(file);
-			result+=is.readAllBytes();
+			//result+=is.readAllBytes();
 			is.close();
 		}catch(Exception e) {
 			return null;
