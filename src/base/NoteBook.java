@@ -94,4 +94,13 @@ public class NoteBook implements Serializable{
 		}
 		return true;
 	}
+	public boolean contains(String name) {
+		for(Folder f:folders) {
+			if(f.getName().equals(name)) return true;
+		}
+		return false;
+	}
+	public void addFolder(String name) {
+		folders.add(new Folder(name));
+	}
 }

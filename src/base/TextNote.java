@@ -46,4 +46,7 @@ public class TextNote extends Note implements Serializable{
 	public String getContent() {
 		return content;
 	}
+	public void saveContent(String c) {
+		content=c;
+	}
 }
